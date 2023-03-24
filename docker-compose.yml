@@ -7,7 +7,7 @@ services:
     image: solr
 
     volumes:
-      - ./data/solr/:/var/solr/
+      - ./data/solr/:/var/solr/data
       - ./misc/solr_configset:/owdex_configset:ro
       - ./misc/solr_entrypoint.sh:/entrypoint.sh
     expose:
