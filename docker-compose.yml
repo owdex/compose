@@ -1,0 +1,48 @@
+version: "3.8"
+
+services:
+
+  solr:
+    container_name: solr
+    image: solr
+
+    volumes:
+      - ./data/solr/:/var/solr/
+      - ./misc/solr_configset:/owdex_configset:ro
+      - ./misc/solr_entrypoint.sh:/entrypoint.sh
+    expose:
+      - 8983
+
+    entrypoint:
+    - /entrypoint.sh
+
+
+  mongo:
+    container_name: mongo
+    image: mongo
+
+    volumes:
+      - ./data/mongo:/data/db
+    expose:
+      - 27017
+
+
+  frontend:
+    container_name: frontend
+    image: ghcr.io/owdex/owdex:main
+    
+    volumes:
+      - ./owdex.toml:/owdex.toml:ro
+    expose:
+      - 80
+
+
+  caddy:
+    container_name: caddy
+    image: caddy
+
+    ports:
+      - 443:443
+    volumes:
+      - ./data/caddy:/data
+      - ./misc/Caddyfile:/etc/caddy/Caddyfile
