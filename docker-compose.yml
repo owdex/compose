@@ -43,6 +43,7 @@ services:
 
     ports:
       - 443:443
+      - 80:80
     volumes:
       - ./data/caddy:/data
       - ./misc/Caddyfile:/etc/caddy/Caddyfile
