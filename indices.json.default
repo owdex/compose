@@ -1,16 +1,12 @@
 {
-	"cores": {
-		"current": {
-			"indices": [
-				"stable",
-				"unstable"
-			]
-		},
-		"archive": {
-			"indices": [
-				"archive"
-			]
-		}
+	"indices": {
+		"current": [
+			"stable",
+			"unstable"
+		],
+		"archive": [
+			"archive"
+		]
 	},
 	"config": {
 		"submission_pool": "current.unstable",
