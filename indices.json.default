@@ -1,0 +1,23 @@
+{
+	"cores": {
+		"current": {
+			"indices": [
+				"stable",
+				"unstable"
+			]
+		},
+		"archive": {
+			"indices": [
+				"archive"
+			]
+		}
+	},
+	"config": {
+		"submission_pool": "current.unstable",
+		"archive": "archive.archive",
+		"default_search": [
+			"current.stable",
+			"current.unstable"
+		]
+	}
+}
