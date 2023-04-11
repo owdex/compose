@@ -76,7 +76,7 @@
   <field name="_root_" type="string" docValues="false" indexed="true" stored="false"/>
   <field name="_version_" type="plong" indexed="false" stored="false"/>
   
-  <field name="_text_" type="text_en" uninvertible="false" indexed="true" stored="false"/>
+  <field name="_text_" type="text_en" uninvertible="false" indexed="true" stored="false" multiValued="true"/>
   <field name="title" type="text_en" uninvertible="false" docValues="false" indexed="true" required="true" stored="true"/>
   <field name="content" type="text_en" uninvertible="false" docValues="false" indexed="true" stored="true"/>
   <field name="description" type="text_en" uninvertible="false" indexed="true" required="false" stored="true"/>
