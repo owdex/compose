@@ -80,6 +80,7 @@
   <field name="title" type="text_en" uninvertible="false" docValues="false" indexed="true" required="true" stored="true"/>
   <field name="content" type="text_en" uninvertible="false" docValues="false" indexed="true" stored="true"/>
   <field name="description" type="text_en" uninvertible="false" indexed="true" required="false" stored="true"/>
+  <field name="submitter" type="string" omitNorms="true" omitTermFreqAndPositions="true" indexed="true" stored="true" uninvertible="false" required="true"/>
   
   <field name="id" type="string" omitNorms="true" omitTermFreqAndPositions="true" indexed="true" stored="true" uninvertible="false" required="true"/>
   <field name="url" type="string" omitNorms="true" omitTermFreqAndPositions="true" indexed="true" stored="true" uninvertible="false" required="true"/>
