@@ -82,6 +82,7 @@
   <field name="description" type="text_en" uninvertible="false" indexed="true" required="false" stored="true"/>
   
   <field name="id" type="string" omitNorms="true" omitTermFreqAndPositions="true" indexed="true" stored="true" uninvertible="false" required="true"/>
+  <field name="url" type="string" omitNorms="true" omitTermFreqAndPositions="true" indexed="true" stored="true" uninvertible="false" required="true"/>
   <field name="index" type="string" uninvertible="false" docValues="true" indexed="true" required="true" stored="true"/>
   <field name="score" type="pint" uninvertible="false" default="0" docValues="true" indexed="true" stored="true"/>
   
