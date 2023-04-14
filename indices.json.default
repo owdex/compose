@@ -9,11 +9,7 @@
 		]
 	},
 	"config": {
-		"submission_pool": "current.unstable",
-		"archive": "archive.archive",
-		"default_search": [
-			"current.stable",
-			"current.unstable"
-		]
+		"default_add": "current.unstable",
+		"default_search": "current"
 	}
 }
