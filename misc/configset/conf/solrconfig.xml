@@ -1018,7 +1018,8 @@
   </updateRequestProcessorChain>
 
   <!-- Disable managed schema -->
-  <schemaFactory class="ClassicIndexSchemaFactory"/>
+  <!-- Note: Don't do this! Solr has a bug where using a non-managed schema will cause Bad Problems. Just leave this as-is. -->
+  <!-- <schemaFactory class="ClassicIndexSchemaFactory"/> -->
 
   <!-- Deduplication
 
