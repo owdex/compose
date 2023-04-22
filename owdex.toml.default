@@ -2,7 +2,10 @@
 # Any settings that should be changed with production are marked with the comment #CHANGEFORPROD.
 # Search this file for instances of #CHANGEFORPROD and replace every value with your own.
 
-debug = false
+[runtime]
+    debug = true
+    host = "0.0.0.0"
+    port = 80
 
 [security]
     secret_key = "supersneaky"  #CHANGEFORPROD: This secret key (to a long random string)
