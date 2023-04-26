@@ -19,7 +19,7 @@
   <field name="index" type="string" indexed="true" stored="true" uninvertible="false" required="true"/>
   <field name="url" type="string" indexed="true" stored="true" uninvertible="false" required="true"/>
   <field name="submitter" type="string" indexed="true" stored="true" uninvertible="false" required="true"/>
-  <field name="score" type="pint" indexed="false" stored="true" uninvertible="false" required="false" docValues="true"/>
+  <field name="votes" type="pint" indexed="false" stored="true" uninvertible="false" required="false" docValues="true"/>
   
   
   <fieldType name="boolean" class="solr.BoolField" sortMissingLast="true"/>
