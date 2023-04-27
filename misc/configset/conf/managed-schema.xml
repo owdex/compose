@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Solr managed schema - automatically generated - DO NOT EDIT -->
 <schema name="owdex" version="1.6">
   
 
@@ -13,13 +12,14 @@
   <copyField source="description" dest="_text_"/>
   <copyField source="title" dest="_text_"/>
 
-  <field name="content" type="text_en" indexed="true" stored="true" uninvertible="false" termPositions="true" termVectors="true" multiValued="false" required="true"/>
-  <field name="title" type="text_en" indexed="true" stored="true" uninvertible="false" termPositions="true" termVectors="true" required="true"/>
-  <field name="description" type="text_en" uninvertible="false" termPositions="true" termVectors="true" indexed="true" stored="true"/>
+  <field name="content" type="text_en" indexed="true" stored="true" uninvertible="false" required="true"/>
+  <field name="title" type="text_en" indexed="true" stored="true" uninvertible="false" required="true"/>
+  <field name="description" type="text_en" indexed="true" stored="true" uninvertible="false" required="true"/>
   
-  <field name="url" type="string" uninvertible="false" indexed="true" required="true" stored="true"/>
-  <field name="submitter" type="string" uninvertible="false" indexed="true" stored="true"/>
-  <field name="votes" type="pint" uninvertible="false" docValues="true" indexed="false" stored="false"/>
+  <field name="index" type="string" indexed="true" stored="true" uninvertible="false" required="true"/>
+  <field name="url" type="string" indexed="true" stored="true" uninvertible="false" required="true"/>
+  <field name="submitter" type="string" indexed="true" stored="true" uninvertible="false" required="true"/>
+  <field name="votes" type="pint" indexed="false" stored="true" uninvertible="false" required="false" docValues="true"/>
   
   
   <fieldType name="boolean" class="solr.BoolField" sortMissingLast="true"/>

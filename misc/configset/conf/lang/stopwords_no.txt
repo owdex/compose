@@ -191,3 +191,4 @@ verte          | become *
 vort           | become *
 varte          | became *
 vart           | became *
+
